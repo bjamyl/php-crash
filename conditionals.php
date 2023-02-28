@@ -29,3 +29,21 @@ if(!empty($posts)){
 
 // Ternary operator
 echo !empty($posts) ? $posts[0] : 'No Posts';
+
+$firstpost = $posts[0] ?? null;
+
+$favcolor = 'red';
+
+switch($favcolor){
+    case 'red':
+        echo 'Your favorite color is red';
+        break;
+    case 'blue':
+        echo 'Your favorite color is blue';
+        break;
+    case 'green':
+        echo 'Your favorite color is green';
+        break;
+    default:
+    echo 'Your favorite color is not red, green or blue';
+}
